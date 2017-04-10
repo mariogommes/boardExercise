@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--THIS IS AN EXERCISE THAT I DID FOR A COMPANY AS PART OF AN PROCESS FOR AN INTERNSHIP. THIS IS PUBLIC ON MY BITBUCKET,
+ SO I DON'T THINK THAT IS A PROBLEM SEND TO YOU -->
+<head>
+	<meta charset="UTF-8">
+	<title>AgileHub</title>
+	<link rel="stylesheet" href="pageCss/mainSectionStyle.css">
+	<link rel="stylesheet" href="pageCss/mainMenuStyle.css">
+	<link rel="stylesheet" href="pageCss/sidebarStyle.css">
+	<link rel="stylesheet" href="pageCss/normalize.css">
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<header class="row">
+			<h3 class="col-md-2 col-xs-2 col-sm-2" id="agileHub">
+				Agile<b>Hub</b>
+			</h3>
+			<nav class ="mainMenu col-md-10 col-xs-10 col-sm-10">
+				<ul>
+					<li>Board</li>
+					<li>Milestones</li>
+					<li>Repositories</li>
+				</ul>
+			</nav>
+		</header>
+		<div class= "row" id="mainRow">
+			<section class = "col-md-2 col-xs-2 col-sm-2" id="sidebar">
+				<button id="issue">New issue</button>
+				<div id="filterTitle">FILTERS</div>
+				<ul>
+					<li class="filtersControl"><span class="green"></span>filter 1</li>
+					<li class="filtersControl"><span class="purple"></span>filter 2</li>
+					<li class="filtersControl"><span class="orange"></span>filter 3</li>
+				</ul>
+			</section>
+			<section class="col-md-10 col-xs-10 col-sm-10 main">
+				<div class="container-fluid">
+					<div class="row">
+						<h3><b>Board</b> / Board</h3>
+						<input type="text" id="search">
+					</div>
+					<div class="row">
+						<div class="col-md-3 col-xs-3 col-sm-3 doNow" id="now">
+							<h4>Do now</h4><span class="groupPoints">  56 pts</span>
+						</div>
+						<div class="col-md-3 col-xs-3 col-sm-3 doLater" id="later">
+							<h4>Do later</h4><span class="groupPoints">  56 pts</span>
+						</div>
+						<div class="col-md-3 col-xs-3 col-sm-3 holdOn" id="hold">
+							<h4>On Hold</h4><span class="groupPoints">  56 pts</span>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/util.js"></script>
+	<script src="js/dragDrop.js"></script>
+	<script src="js/newIssue.js"></script>
+</body>
+</html>
